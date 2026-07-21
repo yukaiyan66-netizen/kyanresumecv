@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="于凯岩 Kyan Yu｜国际化商业、咨询式销售、产品 GTM、项目推进、用户研究与体育商业个人履历网站。" />
+  <meta name="theme-color" content="#ffffff" />
+  <title>于凯岩 Kyan Yu｜个人履历</title>
+  <link rel="icon" href="./favicon.svg" type="image/svg+xml" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <canvas id="particleCanvas" aria-hidden="true"></canvas>
+  <div class="cursor-glow" aria-hidden="true"></div>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+
+  <header class="topbar" id="top">
+    <a class="brand" href="#top" aria-label="返回顶部">
+      <span class="brand-mark">KY</span>
+      <span class="brand-name"><b>于凯岩</b><small>Kyan Yu</small></span>
+    </a>
+    <nav class="nav-links" aria-label="主导航">
+      <a href="#capabilities" data-i18n="navCapabilities">能力</a>
+      <a href="#experience" data-i18n="navExperience">经历</a>
+      <a href="#projects" data-i18n="navProjects">项目</a>
+      <a href="#education" data-i18n="navEducation">教育</a>
+      <a href="#resume" data-i18n="navResume">简历</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="languageToggle" class="language-toggle" type="button" aria-label="切换语言">EN</button>
+      <a class="download-link" href="./resume.pdf" target="_blank" rel="noopener" data-i18n="viewResume">查看简历</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero shell">
+      <div class="hero-copy reveal">
+        <p class="eyebrow"><i></i><span data-i18n="heroEyebrow">国际化商业 · 咨询式销售 · 产品 GTM · 项目推进</span></p>
+        <h1 data-i18n="heroTitle">把复杂问题，变成清晰、可执行的结果。</h1>
+        <p class="hero-lead" data-i18n="heroLead">我在体育、创业、英国市场拓展与 AI 用户研究之间，持续做同一件事：快速理解问题，连接用户与商业价值，并把方案推进到落地。</p>
+        <div class="hero-actions">
+          <a class="button primary magnetic" href="#experience" data-i18n="viewExperience">查看经历</a>
+          <a class="button secondary magnetic" href="./resume.pdf" target="_blank" rel="noopener" data-i18n="previewResume">预览简历</a>
+        </div>
+        <div class="focus-row" aria-label="能力方向">
+          <span data-i18n="focus1">咨询式销售</span>
+          <span data-i18n="focus2">国际商务</span>
+          <span data-i18n="focus3">产品 GTM</span>
+          <span data-i18n="focus4">项目管理</span>
+          <span data-i18n="focus5">用户研究</span>
+          <span data-i18n="focus6">体育商业</span>
+        </div>
+      </div>
+
+      <aside class="profile-card reveal delay-1 tilt-card">
+        <div class="profile-photo"><img src="./profile.png" alt="于凯岩职业照" /></div>
+        <div class="profile-info">
+          <div>
+            <strong>于凯岩</strong>
+            <span>Kyan Yu</span>
+          </div>
+          <p data-i18n="profileRole">国际化商业 · 商业化 · 项目推进</p>
+        </div>
+        <div class="profile-meta">
+          <span><b data-i18n="profileSchool">伯明翰大学硕士</b><small data-i18n="profileSchoolSub">QS 世界大学排名 68</small></span>
+          <span><b data-i18n="profileLocation">英国 · 伯明翰</b><small data-i18n="profileLocationSub">跨文化学习与工作经历</small></span>
+        </div>
+      </aside>
+    </section>
+
+    <section class="metrics shell reveal" aria-label="核心数据">
+      <article class="metric-card tilt-card"><strong data-count="300" data-suffix="+">0</strong><span data-i18n="metricLeads">主动开发与跟进客户线索</span></article>
+      <article class="metric-card tilt-card"><strong data-count="110" data-prefix="£" data-suffix="k+">0</strong><span data-i18n="metricSigned">个人实际签约金额</span></article>
+      <article class="metric-card tilt-card"><strong data-count="20" data-suffix="+">0</strong><span data-i18n="metricPartners">英国本地商户合作</span></article>
+      <article class="metric-card tilt-card"><strong>0→1</strong><span data-i18n="metricVenture">中英两地创业与产品验证</span></article>
+    </section>
+
+    <section class="section shell" id="capabilities">
+      <div class="section-head reveal">
+        <p>01 / CAPABILITIES</p>
+        <h2 data-i18n="capabilitiesTitle">四组可迁移能力。</h2>
+        <span data-i18n="capabilitiesLead">不把自己锁在单一行业，而是用真实经历证明商业化、市场、项目与研究能力。</span>
+      </div>
+      <div class="capability-grid">
+        <article class="capability-card reveal tilt-card">
+          <span>01</span>
+          <h3 data-i18n="cap1Title">商业化与咨询式销售</h3>
+          <p data-i18n="cap1Text">从需求诊断、价值表达、报价谈判到签约与交付，独立推进复杂产品销售闭环。</p>
+        </article>
+        <article class="capability-card reveal delay-1 tilt-card">
+          <span>02</span>
+          <h3 data-i18n="cap2Title">GTM 与市场拓展</h3>
+          <p data-i18n="cap2Text">搭建地推、展会、商户合作与转介绍渠道，验证市场路径并持续优化获客方式。</p>
+        </article>
+        <article class="capability-card reveal delay-2 tilt-card">
+          <span>03</span>
+          <h3 data-i18n="cap3Title">项目管理与跨方协同</h3>
+          <p data-i18n="cap3Text">拆解目标、安排流程、协调资源、控制节点，并推动门店、活动与客户项目落地。</p>
+        </article>
+        <article class="capability-card reveal delay-3 tilt-card">
+          <span>04</span>
+          <h3 data-i18n="cap4Title">用户研究与产品思维</h3>
+          <p data-i18n="cap4Text">围绕用户采用、信任、留存和商业价值，完成研究设计、需求分析与产品判断。</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="experience">
+      <div class="shell">
+        <div class="section-head reveal">
+          <p>02 / EXPERIENCE</p>
+          <h2 data-i18n="experienceTitle">经历不是标签，而是能力证据。</h2>
+          <span data-i18n="experienceLead">跨体育、创业与英国市场，但始终围绕用户、商业价值与项目落地。</span>
+        </div>
+
+        <div class="experience-stack">
+          <article class="experience-card primary-experience reveal tilt-card">
+            <header>
+              <div>
+                <small>UK · BUSINESS DEVELOPMENT</small>
+                <h3>ApolloGrid Solar / Rahvolt UK</h3>
+                <p data-i18n="apolloRole">Business Development & Go-to-Market Specialist</p>
+              </div>
+              <time>2026.02 — NOW</time>
+            </header>
+            <ul>
+              <li data-i18n="apollo1">负责英国本土复杂产品的 ToB / ToC 咨询式销售与本地化 GTM，覆盖开发、诊断、方案、谈判及交付协同。</li>
+              <li data-i18n="apollo2">累计主动开发与跟进 300+ 客户线索，个人实际签约超过 £110k，单体项目约 £7k—£12k。</li>
+              <li data-i18n="apollo3">主动申请并参加 NEC 等英国本地展会，拓展 20+ 商户合作，并参与门店选址租赁与跨方推进。</li>
+            </ul>
+          </article>
+
+          <div class="experience-grid">
+            <article class="mini-experience reveal delay-1 tilt-card">
+              <small>FOUNDER · 0→1</small>
+              <h3 data-i18n="ventureExperienceTitle">轻运动上门体育工作室</h3>
+              <p data-i18n="ventureExperienceText">独立完成课程设计、获客转化与服务交付；国内三个月营收约 ¥28,000—¥30,000，英国合作课程营收超过 £3,000。</p>
+            </article>
+            <article class="mini-experience reveal delay-2 tilt-card">
+              <small>LEADERSHIP</small>
+              <h3 data-i18n="leadershipTitle">学生会主席与活动统筹</h3>
+              <p data-i18n="leadershipText">统筹辩论赛、体育赛事与表彰大会，负责人员分工、流程管理、现场执行和跨部门协同。</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section shell" id="projects">
+      <div class="section-head reveal">
+        <p>03 / PROJECTS</p>
+        <h2 data-i18n="projectsTitle">研究、商业与实践并行。</h2>
+        <span data-i18n="projectsLead">三项经历分别证明研究能力、商业分析和从零到一的执行。</span>
+      </div>
+      <div class="project-grid">
+        <article class="project-card reveal tilt-card">
+          <small>AI USER RESEARCH</small>
+          <h3 data-i18n="researchTitle">数字健身与 AI 人机交互用户留存研究</h3>
+          <p data-i18n="researchText">基于 S-O-R 框架研究 AI 交互如何影响参与、信任、情感支持、持续使用及商业价值转化。</p>
+          <div class="tag-row"><span>User Research</span><span>Retention</span><span>AI Interaction</span></div>
+        </article>
+        <article class="project-card reveal delay-1 tilt-card">
+          <small>BUSINESS STRATEGY</small>
+          <h3 data-i18n="luluTitle">智能运动生态商业战略项目（Lululemon）</h3>
+          <p data-i18n="luluText">完成用户需求、品牌定位、价值主张、商业模式与低风险试点策略，并进行英文路演与 Q&A。</p>
+          <div class="tag-row"><span>Business Model</span><span>GTM</span><span>Pitch</span></div>
+        </article>
+        <article class="project-card reveal delay-2 tilt-card">
+          <small>INNOVATION</small>
+          <h3 data-i18n="innovationTitle">科研与创新成果</h3>
+          <p data-i18n="innovationText">第一作者期刊论文 2 篇、国家级外观专利 2 项、省级大学生创新创业训练计划项目负责人。</p>
+          <div class="tag-row"><span>Research</span><span>Patents</span><span>Innovation</span></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section section-soft" id="education">
+      <div class="shell education-layout">
+        <div class="section-head reveal">
+          <p>04 / EDUCATION</p>
+          <h2 data-i18n="educationTitle">教育与长期积累。</h2>
+          <span data-i18n="educationLead">国际化硕士背景、扎实本科成绩，以及竞技体育形成的纪律与韧性。</span>
+        </div>
+        <div class="education-list reveal">
+          <article>
+            <time>2025—2026</time>
+            <div>
+              <small>QS WORLD UNIVERSITY RANKING #68</small>
+              <h3 data-i18n="uobTitle">英国伯明翰大学 · 体育商业管理硕士</h3>
+              <p data-i18n="uobText">研究 AI 人机交互、数字健身用户行为、产品留存、商业分析、项目管理与国际市场创新；预计 2026 年 12 月毕业。</p>
+            </div>
+          </article>
+          <article>
+            <time>2020—2024</time>
+            <div>
+              <small>TOP 5% · 90.87 / 100</small>
+              <h3 data-i18n="wtiTitle">武汉体育学院 · 武术与民族传统体育本科</h3>
+              <p data-i18n="wtiText">优秀毕业生、优秀毕业论文、校级奖学金；第一作者论文 2 篇，国家级外观专利 2 项。</p>
+            </div>
+          </article>
+        </div>
+        <div class="credential-list reveal delay-1">
+          <span data-i18n="c1">国家二级运动员</span>
+          <span data-i18n="c2">一级散打裁判员</span>
+          <span data-i18n="c3">学生会主席</span>
+          <span data-i18n="c4">辩论赛冠军</span>
+          <span data-i18n="c5">雅思 6.0</span>
+          <span data-i18n="c6">英文 Presentation</span>
+          <span>ChatGPT</span><span>Claude</span><span>SPSS</span><span>Excel</span><span>PowerPoint</span>
+          <span data-i18n="c7">网站搭建</span><span data-i18n="c8">CRM 流程优化</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact shell" id="resume">
+      <div class="contact-copy reveal">
+        <p>05 / RESUME & CONTACT</p>
+        <h2 data-i18n="contactTitle">于凯岩</h2>
+        <span data-i18n="contactText">简历、邮箱与联系方式。</span>
+      </div>
+      <div class="contact-side reveal delay-1">
+        <a href="mailto:Y156456909633@163.com">Y156456909633@163.com</a>
+        <a href="tel:+447344406412">+44 7344 406412</a>
+        <a href="tel:+8618669200327">+86 186 6920 0327</a>
+        <a class="resume-card magnetic" href="./resume.pdf" target="_blank" rel="noopener" download="于凯岩.pdf">
+          <span>PDF</span>
+          <div><strong data-i18n="resumeName">于凯岩</strong><small data-i18n="resumeLanguage">PDF · 中文</small></div>
+          <b>↗</b>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer shell">
+    <span>© 2026 Kyan Yu</span>
+    <span data-i18n="footer">Business · GTM · Projects · Research</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
